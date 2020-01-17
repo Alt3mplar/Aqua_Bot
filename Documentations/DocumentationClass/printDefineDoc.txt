@@ -1,0 +1,96 @@
+    '''
+    Parameters
+    ----------
+    para:str
+      parameters of the given document
+    '''
+
+    '''
+    Tells the user if there is a return value and what that value is if it exists
+    Parameters
+    ----------    
+    returns:str
+      the returns of the document 
+    Returns
+    -------
+    str
+      the returns given
+      the error message if there is no value
+
+    '''
+
+    '''
+    prints the raised error given by the user and tells the user if there is a value given for the variable 
+    Parameters
+    --------
+    raise:str
+      the raised errors if the document is for a class 
+    Returns
+    -------
+    str
+      the raises given
+      the error message if there is no value
+    '''
+
+    '''
+    prints the number of errors that the user provided and checks if there are any above 0
+    Parameters
+    ----------
+    numberErrors:int
+      the number of errors
+    Returns
+    -------
+        int
+      the number of errors given if it is >= 0
+    '''
+
+
+    '''
+    prints the attributes given by the user and tells the user if there is a value given for the variable 
+    Parameters
+    --------
+    attributes:str
+      the attributes if the document is for a class 
+    Returns
+    -------
+    str
+      the attributes given
+      the error message if there is no value
+    '''
+    
+    
+    '''
+    Parameters
+    ----------
+    methods:str
+      in the event that it is a class, the methods for that documentation
+    Returns
+    -------
+    str
+      the attributes given
+      the error message if there is no value
+
+    '''
+
+
+    '''
+    prints the document
+    
+    function prints and formats a document for the user
+    Parameters
+    ----------
+    para:str
+      parameters of the given document
+    returns:str
+      the returns of the document 
+    raises:str
+      the errors raised in the document
+    attributes:str
+      the attributes if the document is for a class 
+    methods:str
+      in the event that it is a class, the methods for that documentation
+    Returns
+    -------
+    str
+      the formatted document for use  
+    '''

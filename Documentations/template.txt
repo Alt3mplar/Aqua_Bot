@@ -1,0 +1,30 @@
+  '''
+  Short summary of the use of the function
+  
+  Longer description of the use of the function.  This is an area where you can 
+  expand on the short summary.
+
+  Parameters
+  ----------
+  parameter1 : type
+    description of parameter1
+  parameter2 : type
+    description of parameter2
+  parameter3 : type, optional
+    description of parameter3
+  
+  Returns
+  -------
+  type
+    description of what's being returned
+  
+  Warnings (this section is optional)
+  --------
+  This is a free-text area that describes any warnings that could propogate
+  in this program
+
+  Raises (this section is only applicable if your function raises an exception)
+  ------
+  ExceptionType
+    Describe why/how this exception gets raised
+  '''

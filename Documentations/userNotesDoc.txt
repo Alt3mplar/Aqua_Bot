@@ -1,0 +1,22 @@
+'''
+    Uses information in file 'Notes_warning.txt' to post warnings in red text and allows for it to be editted
+    Attributes
+	  ----------
+    messsage: str
+      the errors to be displayed
+
+	  '''
+    def __init__(self, message, editor):
+      '''
+      Sets the message to be displayed
+
+      Parameters
+      ----------
+      warning : list
+        allows for warnings to be printed from the file
+      editor: str
+        the edits made to the warnings
+      Return
+      ----------
+      None
+'''

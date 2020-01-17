@@ -1,0 +1,192 @@
+class Document:
+  
+  def __init__(self, para=[], returns=[], raises=[], attributes=[], methods=[], numberErrors= 0):
+    '''
+    Constructor to build documentations
+		
+    Parameters
+    ----------
+    para:str
+      parameters of the given document
+    returns:str
+      the returns of the document 
+    raises:str
+      the raises in the document
+    numberErrors:int
+      the number of errors
+    attributes:str
+      the attributes if the document is for a class 
+    methods:str
+      in the event that it is a class, the methods for that documentation
+    '''
+		
+    self.para = para
+    self.returns = returns
+    self.raises = raises
+    self.numberErrors = numberErrors
+    self.attributes = attributes
+    self.methods = methods
+
+#print Functions
+  def printPara(self, para)->None:
+    '''
+    Parameters
+    ----------
+    para:str
+      parameters of the given document
+    '''
+    if para == " ":
+      para = str("no value")
+    else:
+      print(self.para)
+      return
+  
+  def printReturns(self, returns)->None:
+    '''
+    Tells the user if there is a return value and what that value is if it exists
+    Parameters
+    ----------    
+    returns:str
+      the returns of the document 
+    Returns
+    -------
+    str
+      the returns given
+      the error message if there is no value
+
+    '''
+    if returns(" "):
+      returns = str("no value")
+    else:
+      print(self.returns)
+      return
+  
+  def printRaises(self, raises)->None:
+    '''
+    prints the raised error given by the user and tells the user if there is a value given for the variable 
+    Parameters
+    --------
+    raise:str
+      the raised errors if the document is for a class 
+    Returns
+    -------
+    str
+      the raises given
+      the error message if there is no value
+    '''
+    if raises==" ":
+      raises = str("no value")
+    else:  
+      print(self.raises)
+      return
+
+  def printNumberErrors(self,numberErrors)->bool:
+    '''
+    prints the number of errors that the user provided and checks if there are any above 0
+    Parameters
+    ----------
+    numberErrors:int
+      the number of errors
+    Returns
+    -------
+        int
+      the number of errors given if it is >= 0
+    '''
+    if numberErrors > 0:
+      print (self.numberErrors)
+      return True
+    else:
+      return False
+  
+  def printAttributes(self,attributes)->None:
+    '''
+    prints the attributes given by the user and tells the user if there is a value given for the variable 
+    Parameters
+    --------
+    attributes:str
+      the attributes if the document is for a class 
+    Returns
+    -------
+    str
+      the attributes given
+      the error message if there is no value
+    '''
+    if attributes==" ":
+      attributes = str("no value")
+    else:
+      print (self.attributes)
+      return
+
+  def printMethod(self,methods)->None:
+    '''
+    Parameters
+    ----------
+    methods:str
+      in the event that it is a class, the methods for that documentation
+    Returns
+    -------
+    str
+      the attributes given
+      the error message if there is no value
+
+    '''
+    if methods==" ":
+      methods = str("no value")
+    else:
+      print (self.methods)
+      return
+#print Explainations   
+#print Document  
+  def printDocument(self, para:list, returns:list, raises:list,numberErrors:int,attributes:list,methods:list)->None:
+    '''
+    prints the document
+    
+    function prints and formats a document for the user
+    Parameters
+    ----------
+    para:str
+      parameters of the given document
+    returns:str
+      the returns of the document 
+    raises:str
+      the errors raised in the document
+    attributes:str
+      the attributes if the document is for a class 
+    methods:str
+      in the event that it is a class, the methods for that documentation
+    Returns
+    -------
+    str
+      the formatted document for use  
+    '''
+    if attributes==" ":
+      print(" ")
+    else:
+      print (self.attributes)
+      print ("--------")
+   
+    if methods== " " :
+      print(" ")
+    else:
+      print (self.methods)
+      print ("--------") 
+    
+    if para==" ":
+      print(" ")
+    else:
+      print(self.para)
+      print ("--------")
+    
+    if returns(" "):
+      print(" ")
+    else:
+      print(self.returns)
+      print ("--------")
+      
+    
+    if raises==" ":
+      print(" ")
+    else:  
+      print(self.raises)
+      print ("--------")
+    

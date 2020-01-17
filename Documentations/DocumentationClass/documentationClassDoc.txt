@@ -1,0 +1,33 @@
+  '''
+  Uses informations to construct formal python documentation
+  *note that if the value does not exist set a single space as a replacement value*
+  Attributes
+	----------
+  para: list
+    the parameters of the program
+  returns: list
+    the returns of the function
+  raises: list
+    the errors that may be raised within the program
+  numberErrors: int, list
+    the number of errors that may be produced
+  attributes: list
+    the attributes of a class if needed
+  methods: list
+    the method if the documentation is for a class
+  Methods
+	-------
+  printPara()->Bool
+  printReturn()->Bool
+  printRaises()->Bool
+  printNumberErrors()->Bool
+  printAttirbutes()->Bool
+  printMethod()->Bool
+  explainPara()->Bool
+  explainReturn()->Bool
+  explainRaises()->Bool
+  explainNumberErrors()->Bool
+  explainAttirbutes()->Bool
+  explainMethod()->Bool
+  printDocument()->None
+	'''

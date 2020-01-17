@@ -1,0 +1,21 @@
+  '''
+  Timer
+
+
+  Parameters
+  ----------
+  timerStart : str
+    input for when the timer should begin
+  timerRep: str
+    while this value is true, the timer will repeat itself
+  sixtySec: int
+    the base time, one minute
+  minutes : int 
+    the number of minutes that are inputed by the user
+  
+  Returns
+  -------
+  str
+    A statement telling the user how much time remains
+
+  '''

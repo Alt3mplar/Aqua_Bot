@@ -1,0 +1,17 @@
+    '''
+  Resets the Menu Function  
+
+  Parameters
+  ----------
+  exitInput : str
+    response to reset question
+  menuInput : str
+    response to menu question
+  parameter3 : type, optional
+    description of parameter3
+  
+  Returns
+  -------
+  str
+    the menu and it's functions
+  '''

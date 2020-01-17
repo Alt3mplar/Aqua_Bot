@@ -1,0 +1,19 @@
+    '''
+    Constructor to build documentations
+		
+    Parameters
+    ----------
+    para:str
+      parameters of the given document
+    returns:str
+      the returns of the document 
+    raises:str
+      the raises in the document
+    numberErrors:int
+      the number of errors
+    attributes:str
+      the attributes if the document is for a class 
+    methods:str
+      in the event that it is a class, the methods for that documentation
+    '''
+		
