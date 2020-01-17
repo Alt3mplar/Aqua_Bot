@@ -9,28 +9,77 @@ client = commands.Bot(command_prefix='!')
 # Events
 @client.event
 async def on_ready():
-    
+    '''
+    States that the program is active and running
+    Returns
+    -------
+    str
+        message that indicates that commands will be run through bot on a given server
+    '''
     print('Hi!')
 
 
 @client.event
 async def on_member_join(member):
+    '''
+    States when a member has joined or not 
+
+    Parameters
+    ----------
+    member : list
+        checks the member list
+  
+    Returns
+    -------
+    str
+        states a member has joined
+    '''
     print(f'{member} has joined the server')
 
 
 @client.event
 async def on_member_remove(member):
+    '''
+   States when a member has left or not 
+
+    Parameters
+    ----------
+    member : list
+        checks the member list
+  
+    Returns
+    -------
+    str
+        states a member has left
+    '''
     print(f'{member} has left the server')
 
 
 # Commands
 @client.command(aliases=['Ping', 'Latancy', 'latancy'])
 async def ping(ctx):
+    '''
+    States the ping of a user who calls the command
+    provides answer in ms 
+  
+    Returns
+    -------
+    str
+        states the ping of a given user
+    '''
     await ctx.send(f'ping: {round(client.latency * 1000)} ms')
 
 @client.command()
-async def function(ctx,arg):
-  await ctx.send(arg)
+async def test(ctx,arg):
+    '''
+    Used to test functions
+    repeats the message sent along with the command
+    Returns
+    -------
+    str
+        statement that user calling the function made (one word)
+    '''    
+    await ctx.send(arg)
 
 def findDefinition(word):
     '''
