@@ -117,4 +117,4 @@ async def time(ctx):
         await ctx.send(msg)
 
 # Discord Importer
-client.run('NjYzNzM3Mzc3ODA1NTY1OTUy.XiDz0Q.VVbnJNQyQA2XXQu1tWWkbDnnr2Y')
+client.run('Input Your Token Here')
